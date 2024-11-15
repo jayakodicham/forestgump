@@ -38,7 +38,7 @@
      <!-- Responsive navbar-->
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#!">Start Bootstrap</a>
+            <a class="navbar-brand" href="#!">Memory Forest Memory</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -70,16 +70,38 @@
         // Forrest Gump main event locations with timestamps
         var markers = [
         {
-    position: [32.3792, -86.3077],
-    popup: `
+        position: [32.3792, -86.3077],
+        popup: `
         <b>Greenbow, Alabama</b><br>
         Forrest's hometown.<br>
         <p>Moragahakanda Dam: The dam generates power from three 67 MW turbines, with a total installed capacity of 201 MW, making it the second largest hydroelectric power station in Sri Lanka. Construction on the dam began in August 1979 and was ceremonially completed in February 1985.</p>
         <img src="images/sample.jpg" style="width: 150px">
-    `,
-    year: 1951
+        `,
+        year: 1951
         }
         ];
+
+        var iconOptions = {
+        iconUrl: src="images/pin.png", // Updated to use your custom icon
+        iconSize: [55, 55]      // Size of the custom icon
+        };
+        var customIcon = L.icon(iconOptions);
+        var markerOptions = { icon: customIcon };
+
+        // Forrest Gump main event locations with timestamps
+        var markers = [
+        {
+        position: [32.3792, -86.3077],
+        popup: `
+        <b>Greenbow, Alabama</b><br>
+        Forrest's hometown.<br>
+        <p>Moragahakanda Dam: The dam generates power from three 67 MW turbines, with a total installed capacity of 201 MW, making it the second largest hydroelectric power station in Sri Lanka. Construction on the dam began in August 1979 and was ceremonially completed in February 1985.</p>
+        <img src="images/sample.jpg" style="width: 150px">
+        `,
+        year: 1951
+        }
+        ];
+
 
         // Add markers with timestamps to map
         var eventsLayer = L.layerGroup();
