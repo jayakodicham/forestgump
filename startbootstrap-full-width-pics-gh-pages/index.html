@@ -140,6 +140,19 @@
         `,
         year: 1971
         });
+       
+        markers.push({
+        position: [38.9072,-77.0369],
+        popup: `
+        <b>Washinton DC.</b><br>
+        The White House.<br>
+        <p> President Lyndon B. Johnson presents Forrest Gump with the Medal of Honor for his bravery and service in the Vietnam War.</p> <p>The movie's depiction of Forrest Gump receiving the Medal of Honor is loosely based on the real-life experience of Medal of Honor recipient Sammy L. Davis.In the movie, Tom Hanks' face was superimposed over Davis' body in the footage of President Johnson presenting Davis with the Medal of Honor.</p>
+        <img src="images/medal.jpg" style="width: 150px">
+        `,
+        year: 1968
+        });
+
+
         // Add markers with timestamps to map
         var eventsLayer = L.layerGroup();
         markers.forEach(function(event) {
