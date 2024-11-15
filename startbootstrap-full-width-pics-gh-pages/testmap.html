@@ -69,12 +69,16 @@
 
         // Forrest Gump main event locations with timestamps
         var markers = [
-            { position: [32.3792, -86.3077], popup: "<b>Greenbow, Alabama</b><br>Forrest's hometown.", year: 1951 },
-            { position: [38.8893, -77.0502], popup: "<b>Washington, D.C.</b><br>Forrest meets Jenny again.", year: 1967 },
-            { position: [10.8231, 106.6297], popup: "<b>Vietnam</b><br>Forrest serves in the Vietnam War.", year: 1969 },
-            { position: [37.8651, -119.5383], popup: "<b>Monument Valley</b><br>Forrest ends his run.", year: 1981 },
-            { position: [36.1147, -115.1728], popup: "<b>Las Vegas</b><br>Ping-Pong Diplomacy fame.", year: 1971 },
-            { position: [29.9511, -90.0715], popup: "<b>New Orleans</b><br>Forrest starts the Bubba Gump Shrimp Company.", year: 1974 }
+        {
+    position: [32.3792, -86.3077],
+    popup: `
+        <b>Greenbow, Alabama</b><br>
+        Forrest's hometown.<br>
+        <p>Moragahakanda Dam: The dam generates power from three 67 MW turbines, with a total installed capacity of 201 MW, making it the second largest hydroelectric power station in Sri Lanka. Construction on the dam began in August 1979 and was ceremonially completed in February 1985.</p>
+        <img src="images/sample.jpg" style="width: 300px">
+    `,
+    year: 1951
+        }
         ];
 
         // Add markers with timestamps to map
