@@ -81,26 +81,28 @@
         }
         ];
 
-        var iconOptions = {
-        iconUrl: src="images/pin.png", // Updated to use your custom icon
-        iconSize: [55, 55]      // Size of the custom icon
-        };
-        var customIcon = L.icon(iconOptions);
-        var markerOptions = { icon: customIcon };
-
-        // Forrest Gump main event locations with timestamps
-        var markers = [
-        {
-        position: [32.3792, -86.3077],
+        markers.push({
+        position: [38.9072, -77.0369],
         popup: `
-        <b>Greenbow, Alabama</b><br>
-        Forrest's hometown.<br>
-        <p>Moragahakanda Dam: The dam generates power from three 67 MW turbines, with a total installed capacity of 201 MW, making it the second largest hydroelectric power station in Sri Lanka. Construction on the dam began in August 1979 and was ceremonially completed in February 1985.</p>
-        <img src="images/sample.jpg" style="width: 150px">
+        <b>Washington, D.C.</b><br>
+        The nation's capital.<br>
+        <p>This is where Forrest meets the president and participates in rallies.</p>
+        <img src="images/washington.jpg" style="width: 150px">
         `,
-        year: 1951
-        }
-        ];
+        year: 1967
+        });
+
+        //Add your codes for the markers after this line
+        markers.push({
+        position: [38.9072, -77.0369],
+        popup: `
+        <b>Washington, D.C.</b><br>
+        The nation's capital.<br>
+        <p>This is where Forrest meets the president and participates in rallies.</p>
+        <img src="images/washington.jpg" style="width: 150px">
+        `,
+        year: 1967
+        });
 
 
         // Add markers with timestamps to map
@@ -139,6 +141,11 @@
                 }
             });
         });
+        markers.forEach(markerData => {
+    L.marker(markerData.position, markerOptions)
+        .addTo(map)
+        .bindPopup(markerData.popup);
+});
 
         // Layer controls for map
         var baseMaps = { "Map": baseLayer };
