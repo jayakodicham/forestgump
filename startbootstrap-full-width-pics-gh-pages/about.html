@@ -5,84 +5,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Forest Gump</title>
+        <title>Mapping Mahaweli</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <script type="text/javascript">
-            let slideIndex = 1;
-            showSlides(slideIndex);
-      
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-      
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-      
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-      
-                if (n > slides.length) { slideIndex = 1; }
-                if (n < 1) { slideIndex = slides.length; }
-      
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-            </script>
-
     </head>
     <body>
-         <!-- Responsive navbar-->
-         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!">Cinematic and National Memory: Mapping Forrest Gump</a>
+                <a class="navbar-brand" href="#!">Mapping Mahaweli</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="map.html">Map</a></li>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mahaweli Memories</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="story1.html" class="dropdown-item">Story 1</a>
+                                <a href="story2.html" class="dropdown-item">Story 2</a>
+                                <a href="story3.html" class="dropdown-item">Story 3</a>
+                            </div>
+                        </div>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About AMDP</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="about the author.html">About the Author</a></li>
+
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Header - set the background image for the header in the line below-->
         <header class="py-5 bg-image-full" style="background-image: url('images/gump.jpg')">
+            <div class="text-center my-5">
+                <h1 class="text-black fs-4 fw-bolder" style="background: white; color: black; padding: 10px; border: 1px solid lightgray;">Cinematic and National Memory: Mapping Forrest Gump</h1>
+                <h1 class="text-black-50 fs-5" style="background: white; color: black; padding: 5px; border: 1px solid black;">About the Project</h1>
+            </div>
         </header>
         <!-- Content section-->
         <section class="py-5">
             <div class="container my-5">
                 <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <h2 style="text-align: center;">Institutions and experiences that share our value of education</h2>
-                        <figure>
-                            <img align="right" style="margin: 50px 75px 75px 50px" src="images/pin.png" width="400" height="405">
-                            <p class="lead">There are many institutions that have offered augmented reality experiences for guests. Some include the <a href="https://mallhistory.org/">Histories of the National Mall</a> (which offers a map for exploration and education on mobile devices or desktop), <a href="https://tinctureofmuseum.wordpress.com/2021/05/26/art-of-london-augmented-reality-art-trail-may-2021/">Art of London</a> (which is an interactive educational experience), or <a href="https://www.slideshare.net/slideshow/02-case-studybmpassportafterlife/13446883#1"> Passport to the Afterlife</a> (where visitors find markers and collect information for personal passports). In relation to these experiences, we would like to incorporate augmented reality for educational purposes, but also a way for visitors to interact with space and place. For example, experiences like Melbourne's <a href="https://www.64waysofbeing.com/about/">64 Ways of Being</a> (which brings Indigenous voices and art to life) or <a href="https://www.youtube.com/watch?v=4oODWVZqfME#:~:text=Artebinaria%20is%20excited%20to%20present%20'Artebinaria%20Open%2DAir,art%20enthusiasts%2C%20with%20exclusive%20installations%20that%20evolve">Artebinaria's Open-Air Museum</a> (which displays mini art galleries in modern-day landscapes) incorporates the current environment and uses augmented reality to immerse visitors in conversations about the past, present, and future. Our goal is to create a similar project for Wanuskewin.</p>
-                        </figure>
+                    <div class="col-lg-12 text-left">
+                        <img style="padding-right: 50px;" src="images/pin.png" align="left" height="300" width="350" /><p><b>Priyanka Jayakodi</b> is a cultural anthropology Ph.D. Student in the Department of Anthropology at Michigan State University who specializes in medical and environmental anthropology. She is pursuing a graduate certification in community engagement and a graduate specialization in gender justice and environmental change. Her research interests are located within the entanglements of ecological-bodily health and household water insecurity in communities where Chronic Kidney Disease of uncertain etiology (CKDu) is prevalent in Sri Lanka. She holds a Bachelor’s and a Master’s degree in Sociology from the University of Peradeniya. Before enrolling in the Anthropology Ph.D. program at MSU, she worked as an adjunct instructor at the Department of Nutrition and Food Studies at Montclair State University (New Jersey) and the Open University of Sri Lanka (Kandy Regional Center). During her time at MSU, Priyanka’s ethnographic and archival research in Sri Lanka has been supported by the Dr. Delia Koo Fellowship from the Asian Studies Center (MSU), the Rose Graduate Fellowship in Water Research (MSU), and the Dissertation Planning Grant from the American Institute for Sri Lankan Studies.</p>     
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Content section-->
-        <section<!-- Image element - set the background image for the header in the line below-->
-        <div class="py-5 bg-image-full" style="background-image: url('wanuskewin field.webp)">
     
         <!-- Footer-->
         <footer class="py-5 bg-dark">
           <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Priyanka, Ashley, Madiha, Jada (2024)</p></div>
           <div class="container"><p class="m-0 text-center text-white"> Mapping Memory Challange, created for the CHI Fellowship 2024-25, MSU </p></div>
-      </footer>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
