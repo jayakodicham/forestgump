@@ -120,13 +120,13 @@
 
         // Initialize the time slider
         var slider = document.getElementById('slider');
-noUiSlider.create(slider, {
-    start: [1940],
-    connect: true,
-    range: { 'min': 1940, 'max': 1981 },
-    step: 1,
-    tooltips: true,
-    format: {
+        noUiSlider.create(slider, {
+        start: [1940],
+        connect: true,
+        range: { 'min': 1940, 'max': 1981 },
+        step: 1,
+        tooltips: true,
+        format: {
         from: Number,
         to: function(value) { return Math.round(value); }
     }
