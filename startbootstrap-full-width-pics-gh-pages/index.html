@@ -129,6 +129,17 @@
         `,
         year: 1969
         });
+
+        markers.push({
+        position: [39.9042,-116.4074],
+        popup: `
+        <b>Beijing, China.</b><br>
+        The Ping Pong Tour.<br>
+        <p>Forrest Gump learned to play ping-pong while recovering from a gunshot wound in Vietnam. He quickly mastered the sport, fascinating his peers and eventually being sent to play in China on the All-American Ping-Pong Team.</p> <p> the scene is inspired by a real-life event that helped establish diplomatic relations between the United States and China. The US table tennis team visited several cities in China in 1971, including Beijing, Tianjin, Guangzhou, and Shanghai.The team's visit was part of a historic event known as "ping pong diplomacy". Ping-pong diplomacy was a key part of Richard Nixon's plan to establish detente with China. The event helped thaw relations between the two countries and was described by Time magazine as "The ping heard round the world".</p>
+        <img src="images/ping pong.jpg" style="width: 150px">
+        `,
+        year: 1971
+        });
         // Add markers with timestamps to map
         var eventsLayer = L.layerGroup();
         markers.forEach(function(event) {
