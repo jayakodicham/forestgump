@@ -119,17 +119,18 @@
         eventsLayer.addTo(map);
 
         // Initialize the time slider
-        noUiSlider.create(document.getElementById('slider'), {
-            start: [1940],
-            connect: true,
-            range: { 'min': 1940, 'max': 1981 },
-            step: 1,
-            tooltips: true,
-            format: {
-                from: Number,
-                to: function(value) { return Math.round(value); }
-            }
-        });
+        var slider = document.getElementById('slider');
+noUiSlider.create(slider, {
+    start: [1940],
+    connect: true,
+    range: { 'min': 1940, 'max': 1981 },
+    step: 1,
+    tooltips: true,
+    format: {
+        from: Number,
+        to: function(value) { return Math.round(value); }
+    }
+});
 
         // Update markers based on slider year
         document.getElementById('slider').noUiSlider.on('update', function(values) {
@@ -146,7 +147,7 @@
     L.marker(markerData.position, markerOptions)
         .addTo(map)
         .bindPopup(markerData.popup);
-});
+        });
 
         // Layer controls for map
         var baseMaps = { "Map": baseLayer };
