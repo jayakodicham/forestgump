@@ -109,9 +109,7 @@
         position: [32.076176, -81.088371],
         popup: `
         <b>Savannah, Georgia</b>
-        <p>In 1981, at a bus stop bench in Savannah, Georgia, a man named Forrest Gump recounts his life story to strangers who sit next to him on a bench
-
-.</p>
+        <p>In 1981, at a bus stop bench in Savannah, Georgia, a man named Forrest Gump recounts his life story to strangers who sit next to him on a bench.</p>
         <img src="images/bench.jpg" style="width: 150px">
         `,
         year: 1981
@@ -122,9 +120,7 @@
         popup: `
         <b>Cape Canaveral, Florida</b><br>
         Moon Landing <br>
-        <p> The Moon landing by the Apollo 11 astronauts on July 20, 1969, is shown on a television screen in the movie while Forest is playing ping pong.</p> <p> The Space Race was a 20th century competition between the United States and the Soviet Union to achieve superiority in spaceflight. The race was a result of the Cold War. The Soviet Union launched Sputnik I, the world's first artificial satellite, on October 4, 1957. The United States landed humans on the moon on July 20, 1969 with Apollo 11 </p>
-
-</p>
+        <p> The Moon landing by the Apollo 11 astronauts on July 20, 1969, is shown on a television screen in the movie while Forest is playing ping pong.</p> <p> The Space Race was a 20th century competition between the United States and the Soviet Union to achieve superiority in spaceflight. The race was a result of the Cold War. The Soviet Union launched Sputnik I, the world's first artificial satellite, on October 4, 1957. The United States landed humans on the moon on July 20, 1969 with Apollo 11 </p></p>
         <img src="images/Space Race.jpg" style="width: 150px">
         `,
         year: 1969
@@ -151,7 +147,6 @@
         `,
         year: 1968
         });
-
 
         // Add markers with timestamps to map
         var eventsLayer = L.layerGroup();
@@ -191,7 +186,7 @@
             });
         });
         markers.forEach(markerData => {
-    L.marker(markerData.position, markerOptions)
+        L.marker(markerData.position, markerOptions)
         .addTo(map)
         .bindPopup(markerData.popup);
         });
