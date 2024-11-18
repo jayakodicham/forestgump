@@ -176,6 +176,66 @@
         year: 1963
         });
 
+        markers.push({
+        position: [33.215775,- 87.538261],
+        popup: `
+        <b>Tuscaloosa, Alabama</b>
+        <br>University of Alabama<br>
+        <p>After Forrest is chased by the bullies from grade school, he attends the University of Alabama, where he joins the football team.</p>
+        <p>On June 11th , the following year, the University of Alabama began integrating Black students into their school. Forrest is present when Governor George Wallace stands in the doorway of Foster Auditorium while he makes his inaugural promise of “segregation now, segregation tomorrow, segregation forever”. Forrest is seen helping Vivian Malone Jones, one of the first Black students who enrolled at the university, with her books.</p>
+        <img src="images/Foster Auditorium.jpg" style="width: 150px">
+        `,
+        year: 1962
+        });
+
+        markers.push({
+        position: [13.3475, -107.6500],
+        popup: `
+        <b>Ls Drang Valley, Vietnam</b>
+        <br>Site of U.S Marine Corps base and airfield during the Vietnam War<br>
+        <p>Forrest enlisted in the U.S. Army in 1966. The following year he traveled to Vietnam where he met his “good best friend” Bubba and Lieutenant Dan Taylor. After being in Vietnam for a week, Forrest’s platoon is ambushed by Vietcong soldiers. Forrest and a few of the men in the platoon stay and fight. A few of the men die in combat, but Forrest rescues the other men, including Lt. Dan.</p>
+        <p>In 1965, active combat units were deployed to Vietnam to help South Vietnam fight against North Vietnam to preserve their democratic ideas that aligned with the West. By 1969, more than 500,000 U.S. military personnel were stationed in Vietnam. In 1973, U.S. combat units were withdrawn and South Vietnam fell to an invasion by the North.</p>
+        <img src="images/vie.jpg" style="width: 150px">
+        `,
+        year: 1967
+        });
+
+        markers.push({
+        position: [38.887161,-77.037331],
+        popup: `
+        <b>Washington, D.C.</b>
+        <br>The National Mall<br>
+        <p>After receiving the Medal of Honor from President Lyndon Johnson, later that day, Forrest winds up addressing a crowd of anti-Vietnam protestors in D.C.</p>
+        <p>During the peak of the Vietnam war, in the 1960s and early 1970s, American citizens launched a social movement that protested the Vietnam war. The movement was one of the largest and most sustained protest movements in U.S history. Supporters used demonstrations, silent vigils, and more to express their opposition to the U.S. government.</p>
+        <img src="images/protest.jpg" style="width: 150px">
+        `,
+        year: 1968
+        });
+
+        markers.push({
+        position: [30.4070,-88.2607],
+        popup: `
+        <b>Bayou La Batre, Alabama</b>
+        <br>Bubba's Family's Home<br>
+        <p>Forrest travels to Vietnam, where he meets Bubba, his platoon-mate turned best friend. Bubba enlist Forrest as his First Mate for the shrimping business he plans to start after the war. Unfortunately, Bubba dies during the war leaving. In memory of his death Forrest founded Bubba Gump Shrimp.</p>
+        <p>Bubba’s mother worked as a domestic for White families, where she cooked and served a variety of shrimp dishes. Black domestic workers, in the U.S., worked under the most unfavorable exploitative conditions. They faced poor pay, harsh treatments, and sexual harassment.</p>
+        <img src="images/domestic.jpg" style="width: 150px">
+        `,
+        year: 1967
+        });
+
+        markers.push({
+        position: [37.871960,-122.259094],
+        popup: `
+        <b>Berkeley, California</b>
+        <br>Univesity of California, Berkeley<br>
+        <p>After participating in the anti-war demonstrations in D.C. Jenny leaves for Berkeley, California where she indulges in a string of abusive relationships and drugs. Disappointed with the way her life has turned out, she climbs onto the edge of her balcony where she contemplates jumping from the top floor of her apartment balcony. However, she is unable to bring herself to jumping off the ledge.</p>
+        <p>Many participants of the Counterculture Movement in the 60s and 70s used drugs heavily. Three common features of the large protests that erupted across the country was the use of drugs, sex and music.</p>
+        <img src="images/jenny.jpg" style="width: 150px">
+        `,
+        year: 1969
+        });
+
         // Add markers with timestamps to map
         var eventsLayer = L.layerGroup();
         markers.forEach(function(event) {
@@ -218,6 +278,7 @@
         .addTo(map)
         .bindPopup(markerData.popup);
         });
+        
 
         // Layer controls for map
     </script>
