@@ -235,6 +235,19 @@
         year: 1969
         });
 
+        markers.push({
+        position: [37.10340874902321, -109.98812670528],
+        popup: `
+        <b>Forrest Gump Point</b>
+        <br>Forrest Gump stops running at Forrest Gump Point<br>
+        <p>Jenny leaves Forrest again. On impulse, he goes out for a "little run". Eventually, he runs across America four times. This is the iconic spot where Forrest ends his cross-country run, declaring, “I’m pretty tired; I think I’ll go home now.” This moment symbolizes a turning point in the character’s journey.</p>
+        <p>Forrest’s run, spanning over three years, captures the cultural and historical zeitgeist of the U.S. during the 1970s and 1980s. It reflects themes of perseverance and self-discovery against the backdrop of significant American landscapes. This Forrest Gump Point in Monument Valley, on the Navajo reservation is now a popular tourist attraction.Image from: https://commons.wikimedia.org 
+        </p>
+        <img src="images/Forrestgump point.jpg" style="width: 150px">
+        `,
+        year: 1976
+        });
+
         // Add markers with timestamps to map
         var eventsLayer = L.layerGroup();
         markers.forEach(function(event) {
