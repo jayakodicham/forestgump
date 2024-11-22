@@ -13,23 +13,11 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
 
-    <!-- Leaflet Time-Slider Plugin -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
-    <script src="https://unpkg.com/leaflet-timedimension/dist/leaflet.timedimension.min.js"></script>
-
     <style>
         #map {
             position: absolute;
             height: 90vh;
             width: 100%;
-        }
-        #slider {
-            position: absolute;
-            bottom: 20px;
-            left: 50px;
-            width: 90%;
-            z-index: 1000;
         }
     </style>
 </head>
@@ -49,7 +37,6 @@
         </div>
     </nav>
     <div id="map"></div>
-    <div id="slider"></div> <!-- Slider container -->
 
     <script>
         // Initialize map centered in the USA
