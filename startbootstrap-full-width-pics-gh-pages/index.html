@@ -272,6 +272,18 @@
         year: 1981
         });
 
+        markers.push({
+        position: [32.45390710071603, -80.63555413176503],
+        popup: `
+        <b>Lucy Point Creek on Lady's Island</b>
+        <br>Hurricane Carmen and Bubba Gump Shrimp<br>
+        <p>Hurricane Carmen devastates the shrimping industry, but Forrest’s boat, Jenny, survives the storm at sea. Lieutenant Dan defiantly confronts the storm, treating it as a personal battle with God, while Forrest clings on in fear. With the onshore fleet destroyed, Forrest and Dan become the region's only shrimpers, transforming their struggling business into a success.</p>
+        <p>Hurricane Carmen was one of the strongest storms of the 1974 Atlantic hurricane season, causing widespread damage along the Gulf Coast, including Louisiana. The film reflects real-life consequences of such hurricanes on local industries, especially fishing and shrimping, which often suffer devastating losses. The shrimp boat scenes were filmed at Lucy Point Creek on Lady's Island, South Carolina.</p>
+        <img src="images/hurricane.png" style="width: 150px">
+        `,
+        year: 1981
+        });
+
         // Add markers with timestamps to map
         var eventsLayer = L.layerGroup();
         markers.forEach(function(event) {
