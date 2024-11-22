@@ -261,6 +261,17 @@
         year: 1981
         });
 
+        markers.push({
+        position: [32.687576, -80.732927],
+        popup: `
+        <b>Looking forward</b>
+        <br>United with Young Forrest<br>
+        <p>Forrest reconnects with Jenny and meets his son, Forrest Jr., symbolizing hope, continuity, and the next chapter in Forrest’s life. The reunion and fatherhood theme illustrate family values and healing in the face of challenges, set in the broader American cultural backdrop of the time.</p>
+        <img src="images/youngforrest.jpg" style="width: 150px">
+        `,
+        year: 1981
+        });
+
         // Add markers with timestamps to map
         var eventsLayer = L.layerGroup();
         markers.forEach(function(event) {
